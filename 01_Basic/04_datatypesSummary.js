@@ -46,3 +46,25 @@ let myFunction = function(){
 myFunction();
 
 console.table([typeof car,typeof myObj,typeof myFunction, typeof userName, typeof age, typeof isLoggedin, typeof email, typeof money, typeof BigNumber, typeof id])
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Premitive) , heap(Non-Premitive)
+
+let myAcc = 12345;
+let anoAcc = myAcc;
+anoAcc = 6789
+console.log(anoAcc)
+console.log(myAcc)
+
+// heap example
+
+let userOne = {
+    userName:"Abhishek",
+    age: 20
+}
+let userTwo = userOne;
+userTwo.age = 21
+
+console.log(userTwo.age)
+console.log(userOne.age)
